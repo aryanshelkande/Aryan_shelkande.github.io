@@ -1,58 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>John Doe</h1>
-        <p>Web Developer | Designer | Freelancer</p>
-    </header>
+/* General Styling */
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0a0f1e;
+    color: #e0e0e0;
+}
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+/* Header */
+header {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #1e3a8a, #9333ea);
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
 
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="about-container">
-            <img src="profile.jpg" alt="John Doe" class="profile-img">
-            <p>Hello! I'm John Doe, a passionate web developer and designer. I love creating clean, user-friendly websites that provide great experiences.</p>
-        </div>
-    </section>
+/* Profile Image */
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Portfolio Website</h3>
-            <p>A personal portfolio showcasing my work and skills.</p>
-        </div>
-        <div class="project">
-            <h3>E-Commerce Store</h3>
-            <p>An online shopping platform built with modern web technologies.</p>
-        </div>
-        <div class="project">
-            <h3>Weather App</h3>
-            <p>A simple app that provides real-time weather updates using an API.</p>
-        </div>
-    </section>
+/* Typing Effect */
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: johndoe@example.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/johndoe" target="_blank">John Doe</a></p>
-        <p>GitHub: <a href="https://github.com/johndoe" target="_blank">github.com/johndoe</a></p>
-    </section>
+.typing-text {
+    color: #facc15;
+}
 
-    <footer>
-        <p>© 2025 John Doe. All Rights Reserved.</p>
-    </footer>
-</body>
-</html>
+.cursor {
+    display: inline-block;
+    width: 5px;
+    background: #facc15;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* Sections */
+.about, .education, .achievements, .projects, .contact {
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about:hover, .education:hover, .achievements:hover, .projects:hover, .contact:hover {
+    transform: scale(1.02);
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e293b;
+    color: white;
+    box-shadow: 0 -4px 10px rgba(255, 255, 255, 0.2);
+}
