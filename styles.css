@@ -1,74 +1,60 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
 }
 
 header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px;
 }
 
-h1 {
+nav ul {
+    list-style: none;
+    padding: 0;
+    background: #444;
     margin: 0;
-}
-
-p {
-    margin: 10px 0 0;
-}
-
-.profile {
     text-align: center;
-    margin: 20px 0;
 }
 
-.profile-pic {
-    display: inline-block;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 150px; /* Adjust size as needed */
-    height: 150px; /* Adjust size as needed */
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-.circular-image {
-    width: 100%;
-    height: auto;
-    display: block;
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
 }
 
-.about {
+nav a:hover {
+    color: #ff9800;
+}
+
+section {
+    margin: 50px 0;
     padding: 20px;
-    text-align: center;
 }
 
-.gallery {
+.project {
+    background: white;
     padding: 20px;
-    text-align: center;
-}
-
-.images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.images img {
-    width: 200px;
-    height: auto;
-    margin: 10px;
+    margin: 20px auto;
+    width: 80%;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    background: #35424a;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
 }
